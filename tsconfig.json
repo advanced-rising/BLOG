@@ -29,11 +29,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/analytics/SimpleAnalytics.js",
-    "components/analytics/Plausible.js",
-    "components/analytics/GoogleAnalytics.js",
-    "scripts/generate-sitemap.js",
-    "scripts/compose.js"
+    "components/analytics/SimpleAnalytics.tsx",
+    "components/analytics/Plausible.tsx",
+    "components/analytics/GoogleAnalytics.tsx",
+    "scripts/generate-sitemap.tsx",
+    "scripts/compose.tsx"
   ],
   "typeRoots": ["./node_modules/@types", "./types"]
 }

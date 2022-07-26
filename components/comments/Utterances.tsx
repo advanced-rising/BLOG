@@ -16,7 +16,7 @@ const Utterances = () => {
   const LoadComments = useCallback(() => {
     setEnabledLoadComments(false)
     const script = document.createElement('script')
-    script.src = 'https://utteranc.es/client.js'
+    script.src = 'https://utteranc.es/client.ts'
     script.setAttribute('repo', siteMetadata.comment.utterancesConfig.repo)
     script.setAttribute('issue-term', siteMetadata.comment.utterancesConfig.issueTerm)
     script.setAttribute('label', siteMetadata.comment.utterancesConfig.label)

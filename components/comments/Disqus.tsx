@@ -16,7 +16,7 @@ const Disqus = ({ frontMatter }) => {
     }
     if (window.DISQUS === undefined) {
       const script = document.createElement('script')
-      script.src = 'https://' + siteMetadata.comment.disqusConfig.shortname + '.disqus.com/embed.js'
+      script.src = 'https://' + siteMetadata.comment.disqusConfig.shortname + '.disqus.com/embed.ts'
       // @ts-ignore
       script.setAttribute('data-timestamp', +date)
       script.setAttribute('crossorigin', 'anonymous')

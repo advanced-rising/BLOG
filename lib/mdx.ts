@@ -86,7 +86,7 @@ export async function getFileBySlug(type, slug) {
     esbuildOptions: (options) => {
       options.loader = {
         ...options.loader,
-        '.js': 'jsx',
+        '.ts': 'tsx',
       }
       return options
     },

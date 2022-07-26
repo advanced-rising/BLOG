@@ -7,11 +7,7 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 
-type Props = {
-  children: React.ReactNode
-}
-
-const LayoutWrapper = ({ children }: Props) => {
+const LayoutWrapper = ({ children }: any) => {
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">

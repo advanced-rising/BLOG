@@ -1,5 +1,3 @@
-export {}
-
 declare global {
   interface Window {
     gtag: any
@@ -9,3 +7,4 @@ declare global {
     DISQUS: any
   }
 }
+export {}

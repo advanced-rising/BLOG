@@ -5,13 +5,7 @@ module.exports = {
   experimental: {
     optimizeUniversalDefaults: true,
   },
-  content: [
-    './pages/**/*.js',
-    './components/**/*.js',
-    './layouts/**/*.js',
-    './lib/**/*.js',
-    './data/**/*.mdx',
-  ],
+  content: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx', './lib/**/*.tsx', './data/**/*.mdx'],
   darkMode: 'class',
   theme: {
     extend: {

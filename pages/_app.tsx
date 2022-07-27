@@ -30,8 +30,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <ScrollObserver>
         <ProgressBar />
         <ScrollProgressBar />
+        <LogRocket />
         <LayoutWrapper>
-          <LogRocket />
           <Component {...pageProps} />
         </LayoutWrapper>
       </ScrollObserver>

@@ -1,32 +1,27 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import headerNavLinks from '@/data/headerNavLinks'
+import headerNavLinks from '@/data/headerNavLinks';
 
-import Link from './Link'
+import Link from './Link';
 
 const MobileNav = () => {
-  const [navShow, setNavShow] = useState(false)
+  const [navShow, setNavShow] = useState(false);
 
   const onToggleNav = () => {
     setNavShow((status) => {
       if (status) {
-        document.body.style.overflow = 'auto'
+        document.body.style.overflow = 'auto';
       } else {
         // Prevent scrolling
-        document.body.style.overflow = 'hidden'
+        document.body.style.overflow = 'hidden';
       }
-      return !status
-    })
-  }
+      return !status;
+    });
+  };
 
   return (
     <div className='sm:hidden'>
-      <button
-        type='button'
-        className='ml-1 mr-1 h-8 w-8 rounded py-1'
-        aria-label='Toggle Menu'
-        onClick={onToggleNav}
-      >
+      <button type='button' className='ml-1 mr-1 h-8 w-8 rounded py-1' aria-label='Toggle Menu' onClick={onToggleNav}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 20 20'
@@ -74,7 +69,7 @@ const MobileNav = () => {
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MobileNav
+export default MobileNav;

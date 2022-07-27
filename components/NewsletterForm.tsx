@@ -60,7 +60,8 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
               subscribed ? 'cursor-default' : 'hover:bg-primary-700 dark:hover:bg-primary-400'
             } focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 dark:ring-offset-black`}
             type='submit'
-            disabled={subscribed}>
+            disabled={subscribed}
+          >
             {subscribed ? 'Thank you!' : 'Sign up'}
           </button>
         </div>

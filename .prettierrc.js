@@ -9,4 +9,4 @@ module.exports = {
   useTabs: false,
   bracketSpacing: true,
   jsxSingleQuote: true,
-};
+}

@@ -68,6 +68,8 @@
     "@types/js-yaml": "^4.0.5",
     "@types/prettier": "^2.4.4",
     "@types/react": "^17.0.41",
+    "@types/unist": "^2.0.6",
+    "@types/vfile": "^4.0.0",
     "@typescript-eslint/parser": "^5.15.0",
     "@umijs/fabric": "^2.10.2",
     "chalk": "^5.0.1",

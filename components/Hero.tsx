@@ -31,7 +31,8 @@ export default function Hero(): ReactElement {
         className='relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-222px)]'
         style={{
           transform: `translateY(-${progress * 20}vh)`,
-        }}>
+        }}
+      >
         <AnimatePresence>
           <div className='mt-[-120px] flex w-screen flex-col justify-between'>
             <div ref={ref} className='mx-auto md:text-4xl'>

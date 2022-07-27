@@ -15,6 +15,7 @@ import { ScrollObserver } from '@/components/ScrollObserver';
 import ScrollProgressBar from '@/components/ScrollProgressBar';
 import LogRocket from '@/components/Logrocket';
 import ProgressBar from '@/components/ProgressBar';
+import { AnimatePresence } from 'framer-motion';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 const isSocket = process.env.SOCKET;
@@ -27,14 +28,16 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
-      <ScrollObserver>
-        <ProgressBar />
-        <ScrollProgressBar />
-        <LogRocket />
-        <LayoutWrapper>
-          <Component {...pageProps} />
-        </LayoutWrapper>
-      </ScrollObserver>
+      <AnimatePresence exitBeforeEnter initial={false}>
+        <ScrollObserver>
+          <ProgressBar />
+          <ScrollProgressBar />
+          <LogRocket />
+          <LayoutWrapper>
+            <Component {...pageProps} />
+          </LayoutWrapper>
+        </ScrollObserver>
+      </AnimatePresence>
     </ThemeProvider>
   );
 }

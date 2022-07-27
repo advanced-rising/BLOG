@@ -1,55 +1,42 @@
-import Image from '@/components/Image'
-import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
-import { BlogSEO } from '@/components/SEO'
-import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import SectionContainer from '@/components/SectionContainer'
-import Tag from '@/components/Tag'
-import Comments from '@/components/comments'
-import siteMetadata from '@/data/siteMetadata'
+import Image from '@/components/Image';
+import Link from '@/components/Link';
+import PageTitle from '@/components/PageTitle';
+import { BlogSEO } from '@/components/SEO';
+import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import SectionContainer from '@/components/SectionContainer';
+import Tag from '@/components/Tag';
+import Comments from '@/components/comments';
+import siteMetadata from '@/data/siteMetadata';
 
-import type { ReactNode } from 'react'
-import type { AuthorFrontMatter } from 'types/AuthorFrontMatter'
-import type { PostFrontMatter } from 'types/PostFrontMatter'
+import type { ReactNode } from 'react';
+import type { AuthorFrontMatter } from 'types/AuthorFrontMatter';
+import type { PostFrontMatter } from 'types/PostFrontMatter';
 
-const editUrl = (fileName) =>
-  `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
 const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`,
-  )}`
+  `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/blog/${slug}`)}`;
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',
   year: 'numeric',
   month: 'long',
   day: 'numeric',
-}
+};
 
 interface Props {
-  frontMatter: PostFrontMatter
-  authorDetails: AuthorFrontMatter[]
-  next?: { slug: string; title: string }
-  prev?: { slug: string; title: string }
-  children: ReactNode
+  frontMatter: PostFrontMatter;
+  authorDetails: AuthorFrontMatter[];
+  next?: { slug: string; title: string };
+  prev?: { slug: string; title: string };
+  children: ReactNode;
 }
 
-export default function PostLayout({
-  frontMatter,
-  authorDetails,
-  next,
-  prev,
-  children,
-}: Props) {
-  const { slug, fileName, date, title, tags } = frontMatter
+export default function PostLayout({ frontMatter, authorDetails, next, prev, children }: Props) {
+  const { slug, fileName, date, title, tags } = frontMatter;
 
   return (
     <SectionContainer>
-      <BlogSEO
-        url={`${siteMetadata.siteUrl}/blog/${slug}`}
-        authorDetails={authorDetails}
-        {...frontMatter}
-      />
+      <BlogSEO url={`${siteMetadata.siteUrl}/blog/${slug}`} authorDetails={authorDetails} {...frontMatter} />
       <ScrollTopAndComment />
       <article>
         <div className='xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700'>
@@ -60,10 +47,7 @@ export default function PostLayout({
                   <dt className='sr-only'>Published on</dt>
                   <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
                     <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(
-                        siteMetadata.locale,
-                        postDateTemplate,
-                      )}
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
                   </dd>
                 </div>
@@ -75,17 +59,13 @@ export default function PostLayout({
           </header>
           <div
             className='divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0'
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
+            style={{ gridTemplateRows: 'auto 1fr' }}>
             <dl className='pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700'>
               <dt className='sr-only'>Authors</dt>
               <dd>
                 <ul className='flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8'>
                   {authorDetails.map((author) => (
-                    <li
-                      className='flex items-center space-x-2'
-                      key={author.name}
-                    >
+                    <li className='flex items-center space-x-2' key={author.name}>
                       {author.avatar && (
                         <Image
                           src={author.avatar}
@@ -97,20 +77,14 @@ export default function PostLayout({
                       )}
                       <dl className='whitespace-nowrap text-sm font-medium leading-5'>
                         <dt className='sr-only'>Name</dt>
-                        <dd className='text-gray-900 dark:text-gray-100'>
-                          {author.name}
-                        </dd>
+                        <dd className='text-gray-900 dark:text-gray-100'>{author.name}</dd>
                         <dt className='sr-only'>Twitter</dt>
                         <dd>
-                          {author.twitter && (
+                          {author.github && (
                             <Link
-                              href={author.twitter}
-                              className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
-                            >
-                              {author.twitter.replace(
-                                'https://twitter.com/',
-                                '@',
-                              )}
+                              href={author.github}
+                              className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
+                              {author.github.replace('https://github.com/', '@')}
                             </Link>
                           )}
                         </dd>
@@ -121,14 +95,8 @@ export default function PostLayout({
               </dd>
             </dl>
             <div className='divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0'>
-              <div className='prose max-w-none pt-10 pb-8 dark:prose-dark'>
-                {children}
-              </div>
+              <div className='prose max-w-none pt-10 pb-8 dark:prose-dark'>{children}</div>
               <div className='pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300'>
-                <Link href={discussUrl(slug)} rel='nofollow'>
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
               </div>
               <Comments frontMatter={frontMatter} />
@@ -137,9 +105,7 @@ export default function PostLayout({
               <div className='divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y'>
                 {tags && (
                   <div className='py-4 xl:py-8'>
-                    <h2 className='text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400'>
-                      Tags
-                    </h2>
+                    <h2 className='text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400'>Tags</h2>
                     <div className='flex flex-wrap'>
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />
@@ -173,10 +139,7 @@ export default function PostLayout({
                 )}
               </div>
               <div className='pt-4 xl:pt-8'>
-                <Link
-                  href='/blog'
-                  className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
-                >
+                <Link href='/blog' className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
                   &larr; Back to the blog
                 </Link>
               </div>
@@ -185,5 +148,5 @@ export default function PostLayout({
         </div>
       </article>
     </SectionContainer>
-  )
+  );
 }

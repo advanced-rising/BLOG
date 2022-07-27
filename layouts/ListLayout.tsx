@@ -1,37 +1,28 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import Link from '@/components/Link'
-import Pagination from '@/components/Pagination'
-import Tag from '@/components/Tag'
-import formatDate from '@/lib/utils/formatDate'
+import Link from '@/components/Link';
+import Pagination from '@/components/Pagination';
+import Tag from '@/components/Tag';
+import formatDate from '@/lib/utils/formatDate';
 
-import type { ComponentProps } from 'react'
-import type { PostFrontMatter } from 'types/PostFrontMatter'
+import type { ComponentProps } from 'react';
+import type { PostFrontMatter } from 'types/PostFrontMatter';
 interface Props {
-  posts: PostFrontMatter[]
-  title: string
-  initialDisplayPosts?: PostFrontMatter[]
-  pagination?: ComponentProps<typeof Pagination>
+  posts: PostFrontMatter[];
+  title: string;
+  initialDisplayPosts?: PostFrontMatter[];
+  pagination?: ComponentProps<typeof Pagination>;
 }
 
-export default function ListLayout({
-  posts,
-  title,
-  initialDisplayPosts = [],
-  pagination,
-}: Props) {
-  const [searchValue, setSearchValue] = useState('')
+export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
+  const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent =
-      frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
-  })
+    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ');
+    return searchContent.toLowerCase().includes(searchValue.toLowerCase());
+  });
 
   // If initialDisplayPosts exist, display it if no searchValue is specified
-  const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue
-      ? initialDisplayPosts
-      : filteredBlogPosts
+  const displayPosts = initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts;
 
   return (
     <>
@@ -53,8 +44,7 @@ export default function ListLayout({
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
+              stroke='currentColor'>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -67,13 +57,7 @@ export default function ListLayout({
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
-            const {
-              slug,
-              date,
-              title: frontMatterTitle,
-              summary,
-              tags,
-            } = frontMatter
+            const { slug, date, title: frontMatterTitle, summary, tags } = frontMatter;
             return (
               <li key={slug} className='py-4'>
                 <article className='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0'>
@@ -86,10 +70,7 @@ export default function ListLayout({
                   <div className='space-y-3 xl:col-span-3'>
                     <div>
                       <h3 className='text-2xl font-bold leading-8 tracking-tight'>
-                        <Link
-                          href={`/blog/${slug}`}
-                          className='text-gray-900 dark:text-gray-100'
-                        >
+                        <Link href={`/blog/${slug}`} className='text-gray-900 dark:text-gray-100'>
                           {frontMatterTitle}
                         </Link>
                       </h3>
@@ -99,22 +80,17 @@ export default function ListLayout({
                         ))}
                       </div>
                     </div>
-                    <div className='prose max-w-none text-gray-500 dark:text-gray-400'>
-                      {summary}
-                    </div>
+                    <div className='prose max-w-none text-gray-500 dark:text-gray-400'>{summary}</div>
                   </div>
                 </article>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
       {pagination && pagination.totalPages > 1 && !searchValue && (
-        <Pagination
-          currentPage={pagination.currentPage}
-          totalPages={pagination.totalPages}
-        />
+        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
       )}
     </>
-  )
+  );
 }

@@ -1,18 +1,18 @@
-import headerNavLinks from '@/data/headerNavLinks'
-import siteMetadata from '@/data/siteMetadata'
+import headerNavLinks from '@/data/headerNavLinks';
+import siteMetadata from '@/data/siteMetadata';
 
-import Logo from '@/data/logo.svg'
+import Logo from '@/data/logo.svg';
 
-import Footer from './Footer'
-import Link from './Link'
-import MobileNav from './MobileNav'
-import SectionContainer from './SectionContainer'
-import ThemeSwitch from './ThemeSwitch'
+import Footer from './Footer';
+import Link from './Link';
+import MobileNav from './MobileNav';
+import SectionContainer from './SectionContainer';
+import ThemeSwitch from './ThemeSwitch';
 
-import type { ReactNode } from 'react'
+import type { ReactNode } from 'react';
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const LayoutWrapper = ({ children }: Props) => {
@@ -27,9 +27,7 @@ const LayoutWrapper = ({ children }: Props) => {
                   <Logo />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className='hidden text-2xl font-semibold sm:block'>
-                    {siteMetadata.headerTitle}
-                  </div>
+                  <div className='hidden text-2xl font-semibold sm:block'>{siteMetadata.headerTitle}</div>
                 ) : (
                   siteMetadata.headerTitle
                 )}
@@ -42,8 +40,7 @@ const LayoutWrapper = ({ children }: Props) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className='p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4'
-                >
+                  className='p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4'>
                   {link.title}
                 </Link>
               ))}
@@ -56,7 +53,7 @@ const LayoutWrapper = ({ children }: Props) => {
         <Footer />
       </div>
     </SectionContainer>
-  )
-}
+  );
+};
 
-export default LayoutWrapper
+export default LayoutWrapper;

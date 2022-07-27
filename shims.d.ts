@@ -1,1 +1,1 @@
-declare module 'katex/dist/katex.css'
+declare module 'katex/dist/katex.css';

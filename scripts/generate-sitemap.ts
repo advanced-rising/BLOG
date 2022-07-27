@@ -1,12 +1,12 @@
-import fs from 'fs'
+import fs from 'fs';
 
-import globby from 'globby'
-import matter from 'gray-matter'
-import * as prettier from 'prettier'
+import globby from 'globby';
+import matter from 'gray-matter';
+import * as prettier from 'prettier';
 
-import siteMetadata from '../data/siteMetadata'
-;(async () => {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
+import siteMetadata from '../data/siteMetadata';
+(async () => {
+  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const pages = await globby([
     'pages/*.js',
     'pages/*.tsx',
@@ -16,7 +16,7 @@ import siteMetadata from '../data/siteMetadata'
     '!pages/_*.js',
     '!pages/_*.tsx',
     '!pages/api',
-  ])
+  ]);
 
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
@@ -25,13 +25,13 @@ import siteMetadata from '../data/siteMetadata'
               .map((page) => {
                 // Exclude drafts from the sitemap
                 if (page.search('.md') >= 1 && fs.existsSync(page)) {
-                  const source = fs.readFileSync(page, 'utf8')
-                  const fm = matter(source)
+                  const source = fs.readFileSync(page, 'utf8');
+                  const fm = matter(source);
                   if (fm.data.draft) {
-                    return
+                    return;
                   }
                   if (fm.data.canonicalUrl) {
-                    return
+                    return;
                   }
                 }
                 const path = page
@@ -42,30 +42,27 @@ import siteMetadata from '../data/siteMetadata'
                   .replace('.tsx', '')
                   .replace('.mdx', '')
                   .replace('.md', '')
-                  .replace('/feed.xml', '')
-                const route = path === '/index' ? '' : path
+                  .replace('/feed.xml', '');
+                const route = path === '/index' ? '' : path;
 
-                if (
-                  page.search('pages/404.') > -1 ||
-                  page.search(`pages/blog/[...slug].`) > -1
-                ) {
-                  return
+                if (page.search('pages/404.') > -1 || page.search(`pages/blog/[...slug].`) > -1) {
+                  return;
                 }
                 return `
                         <url>
                             <loc>${siteMetadata.siteUrl}${route}</loc>
                         </url>
-                    `
+                    `;
               })
               .join('')}
         </urlset>
-    `
+    `;
 
   const formatted = prettier.format(sitemap, {
     ...prettierConfig,
     parser: 'html',
-  })
+  });
 
   // eslint-disable-next-line no-sync
-  fs.writeFileSync('public/sitemap.xml', formatted)
-})()
+  fs.writeFileSync('public/sitemap.xml', formatted);
+})();

@@ -1,7 +1,7 @@
 
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Next.js Starter Blog</title>
+      <title>risingcore Blog</title>
       <link>https://blog-snowy-nine.vercel.app//blog</link>
       <description>A blog created with Next.js and Tailwind.css</description>
       <language>ko-KR</language>

@@ -61,10 +61,6 @@
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/canada</loc>
-  </url>
-
-  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/code</loc>
   </url>
 
@@ -73,15 +69,19 @@
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/canada</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/feature</loc>
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/github</loc>
+    <loc>https://blog-snowy-nine.vercel.app//tags/guide</loc>
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/guide</loc>
+    <loc>https://blog-snowy-nine.vercel.app//tags/github</loc>
   </url>
 
   <url>
@@ -101,15 +101,19 @@
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/multi-author</loc>
-  </url>
-
-  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/next-js</loc>
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/multi-author</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/ols</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/writings</loc>
   </url>
 
   <url>
@@ -118,9 +122,5 @@
 
   <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/tailwind</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/writings</loc>
   </url>
 </urlset>

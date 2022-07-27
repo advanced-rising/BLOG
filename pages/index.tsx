@@ -3,6 +3,7 @@ import Link from '@/components/Link';
 import NewsletterForm from '@/components/NewsletterForm';
 import { PageSEO } from '@/components/SEO';
 import Tag from '@/components/Tag';
+import Works from '@/components/Work/Works';
 import siteMetadata from '@/data/siteMetadata';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import formatDate from '@/lib/utils/formatDate';
@@ -31,7 +32,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           </h1>
           <p className='text-lg leading-7 text-gray-500 dark:text-gray-400'>{siteMetadata.description}</p>
         </div>
-        {/* <Hero /> */}
+        <Hero />
+        <Works />
         <ul className='divide-y divide-gray-200 dark:divide-gray-700'>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {

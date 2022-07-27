@@ -28,9 +28,9 @@ export default function Hero(): ReactElement {
     <div>
       <h1 className='sr-only'>Hello I'm risngcore / FrontEnd Developer from the Republic Korea.</h1>
       <div
-        className='relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-222px)]'
+        className='relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-112px)]'
         style={{
-          transform: `translateY(-${progress * 20}vh)`,
+          transform: `translateY(${progress * 20}vh)`,
         }}>
         <AnimatePresence>
           <div className='mt-[-120px] flex w-screen flex-col justify-between'>

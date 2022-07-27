@@ -11,6 +11,10 @@ import '@/css/tailwind.css';
 import siteMetadata from '@/data/siteMetadata';
 
 import type { AppProps } from 'next/app';
+import { ScrollObserver } from '@/components/ScrollObserver';
+import ScrollProgressBar from '@/components/ScrollProgressBar';
+import LogRocket from '@/components/Logrocket';
+import ProgressBar from '@/components/ProgressBar';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 const isSocket = process.env.SOCKET;
@@ -23,9 +27,15 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
-      <LayoutWrapper>
-        <Component {...pageProps} />
-      </LayoutWrapper>
+      <ScrollObserver>
+        <ProgressBar />
+        <ScrollProgressBar />
+        <LayoutWrapper>
+          <LogRocket />
+
+          <Component {...pageProps} />
+        </LayoutWrapper>
+      </ScrollObserver>
     </ThemeProvider>
   );
 }

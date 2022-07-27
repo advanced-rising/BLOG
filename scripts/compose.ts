@@ -1,15 +1,16 @@
-// @ts-ignore
-const fs = require('fs')
-// @ts-ignore
-const path = require('path')
-const inquirer = require('inquirer')
-const dedent = require('dedent')
+import fs from 'fs'
+import path from 'path'
+
+import dedent from 'dedent'
+import inquirer from 'inquirer'
 
 const root = process.cwd()
 
 const getAuthors = () => {
   const authorPath = path.join(root, 'data', 'authors')
-  const authorList = fs.readdirSync(authorPath).map((filename) => path.parse(filename).name)
+  const authorList = fs
+    .readdirSync(authorPath)
+    .map((filename) => path.parse(filename).name)
   return authorList
 }
 
@@ -23,12 +24,17 @@ const getLayouts = () => {
 }
 
 const genFrontMatter = (answers) => {
-  let d = new Date()
-  const date = [d.getFullYear(), ('0' + (d.getMonth() + 1)).slice(-2), ('0' + d.getDate()).slice(-2)].join('-')
+  const d = new Date()
+  const date = [
+    d.getFullYear(),
+    ('0' + (d.getMonth() + 1)).slice(-2),
+    ('0' + d.getDate()).slice(-2),
+  ].join('-')
   const tagArray = answers.tags.split(',')
   tagArray.forEach((tag, index) => (tagArray[index] = tag.trim()))
   const tags = "'" + tagArray.join("','") + "'"
-  const authorArray = answers.authors.length > 0 ? "'" + answers.authors.join("','") + "'" : ''
+  const authorArray =
+    answers.authors.length > 0 ? "'" + answers.authors.join("','") + "'" : ''
 
   let frontMatter = dedent`---
   title: ${answers.title ? answers.title : 'Untitled'}
@@ -105,8 +111,11 @@ inquirer
       .replace(/ /g, '-')
       .replace(/-+/g, '-')
     const frontMatter = genFrontMatter(answers)
-    if (!fs.existsSync('data/blog')) fs.mkdirSync('data/blog', { recursive: true })
-    const filePath = `data/blog/${fileName ? fileName : 'untitled'}.${answers.extension ? answers.extension : 'md'}`
+    if (!fs.existsSync('data/blog'))
+      fs.mkdirSync('data/blog', { recursive: true })
+    const filePath = `data/blog/${fileName ? fileName : 'untitled'}.${
+      answers.extension ? answers.extension : 'md'
+    }`
     fs.writeFile(filePath, frontMatter, { flag: 'wx' }, (err) => {
       if (err) {
         throw err

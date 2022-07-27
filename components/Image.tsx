@@ -1,6 +1,7 @@
-import NextImage, { ImageProps } from 'next/image'
+import NextImage from 'next/image'
 
-// eslint-disable-next-line jsx-a11y/alt-text
+import type { ImageProps } from 'next/image'
+
 const Image = ({ ...rest }: ImageProps) => <NextImage {...rest} />
 
 export default Image

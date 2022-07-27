@@ -1,19 +1,19 @@
-// @ts-ignore
-const fs = require('fs')
-const globby = require('globby')
-const matter = require('gray-matter')
-const prettier = require('prettier')
-const siteMetadata = require('../data/siteMetadata')
+import fs from 'fs'
 
+import globby from 'globby'
+import matter from 'gray-matter'
+import * as prettier from 'prettier'
+
+import siteMetadata from '../data/siteMetadata'
 ;(async () => {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
   const pages = await globby([
-    'pages/*.ts',
+    'pages/*.js',
     'pages/*.tsx',
     'data/blog/**/*.mdx',
     'data/blog/**/*.md',
     'public/tags/**/*.xml',
-    '!pages/_*.ts',
+    '!pages/_*.js',
     '!pages/_*.tsx',
     '!pages/api',
   ])
@@ -38,14 +38,17 @@ const siteMetadata = require('../data/siteMetadata')
                   .replace('pages/', '/')
                   .replace('data/blog', '/blog')
                   .replace('public/', '/')
-                  .replace('.ts', '')
+                  .replace('.js', '')
                   .replace('.tsx', '')
                   .replace('.mdx', '')
                   .replace('.md', '')
                   .replace('/feed.xml', '')
                 const route = path === '/index' ? '' : path
 
-                if (page.search('pages/404.') > -1 || page.search(`pages/blog/[...slug].`) > -1) {
+                if (
+                  page.search('pages/404.') > -1 ||
+                  page.search(`pages/blog/[...slug].`) > -1
+                ) {
                   return
                 }
                 return `

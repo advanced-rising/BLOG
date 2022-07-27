@@ -1,8 +1,19 @@
 import fs from 'fs'
+
+import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+import {
+  formatSlug,
+  getAllFilesFrontMatter,
+  getFileBySlug,
+  getFiles,
+} from '@/lib/mdx'
+
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import type { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import type { PostFrontMatter } from 'types/PostFrontMatter'
+import type { Toc } from 'types/Toc'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -18,12 +29,19 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }: any) {
+// @ts-ignore
+export const getStaticProps: GetStaticProps<{
+  post: { mdxSource: string; toc: Toc; frontMatter: PostFrontMatter }
+  authorDetails: AuthorFrontMatter[]
+  prev?: { slug: string; title: string }
+  next?: { slug: string; title: string }
+}> = async ({ params }) => {
+  const slug = (params.slug as string[]).join('/')
   const allPosts = await getAllFilesFrontMatter('blog')
-  const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'))
-  const prev = allPosts[postIndex + 1] || null
-  const next = allPosts[postIndex - 1] || null
-  const post = await getFileBySlug('blog', params.slug.join('/'))
+  const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === slug)
+  const prev: { slug: string; title: string } = allPosts[postIndex + 1] || null
+  const next: { slug: string; title: string } = allPosts[postIndex - 1] || null
+  const post = await getFileBySlug('blog', slug)
   // @ts-ignore
   const authorList = post.frontMatter.authors || ['default']
   const authorPromise = authorList.map(async (author) => {
@@ -38,15 +56,27 @@ export async function getStaticProps({ params }: any) {
     fs.writeFileSync('./public/feed.xml', rss)
   }
 
-  return { props: { post, authorDetails, prev, next } }
+  return {
+    props: {
+      post,
+      authorDetails,
+      prev,
+      next,
+    },
+  }
 }
 
-export default function Blog({ post, authorDetails, prev, next }) {
+export default function Blog({
+  post,
+  authorDetails,
+  prev,
+  next,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const { mdxSource, toc, frontMatter } = post
 
   return (
     <>
-      {frontMatter.draft !== true ? (
+      {'draft' in frontMatter && frontMatter.draft !== true ? (
         <MDXLayoutRenderer
           layout={frontMatter.layout || DEFAULT_LAYOUT}
           toc={toc}
@@ -57,10 +87,10 @@ export default function Blog({ post, authorDetails, prev, next }) {
           next={next}
         />
       ) : (
-        <div className="mt-24 text-center">
+        <div className='mt-24 text-center'>
           <PageTitle>
             Under Construction{' '}
-            <span role="img" aria-label="roadwork sign">
+            <span role='img' aria-label='roadwork sign'>
               🚧
             </span>
           </PageTitle>

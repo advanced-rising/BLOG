@@ -9,7 +9,7 @@ import SectionContainer from './SectionContainer';
 import ThemeSwitch from './ThemeSwitch';
 
 import type { ReactNode } from 'react';
-import Footer from './Footer';
+import FooterWrap from './FooterWrap';
 
 interface Props {
   children: ReactNode;
@@ -50,7 +50,7 @@ const LayoutWrapper = ({ children }: Props) => {
           </div>
         </header>
         <main className='mb-auto'>{children}</main>
-        <Footer />
+        <FooterWrap />
       </div>
     </SectionContainer>
   );

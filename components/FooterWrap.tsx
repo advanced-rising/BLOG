@@ -3,7 +3,7 @@ import siteMetadata from '@/data/siteMetadata';
 
 import Link from './Link';
 
-export default function Footer() {
+export default function FooterWrap() {
   return (
     <footer>
       <div className='mt-16 flex flex-col items-center'>

@@ -31,7 +31,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           </h1>
           <p className='text-lg leading-7 text-gray-500 dark:text-gray-400'>{siteMetadata.description}</p>
         </div>
-        <Hero />
+        {/* <Hero /> */}
         <ul className='divide-y divide-gray-200 dark:divide-gray-700'>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {

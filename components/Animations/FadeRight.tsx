@@ -19,8 +19,7 @@ export default function FadeRight({ children, duration, delay }: Props) {
           ease: 'easeInOut',
           delay,
         },
-      }}
-    >
+      }}>
       {children}
     </motion.div>
   );

@@ -19,8 +19,7 @@ export default function FadeUp({ children, duration, delay }: Props) {
           delay,
           ease: 'easeInOut',
         },
-      }}
-    >
+      }}>
       {children}
     </motion.div>
   );

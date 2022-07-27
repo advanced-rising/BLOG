@@ -1,5 +1,3 @@
-English | [简体中文](./README.zh-CN.md)
-
 # Tailwind Nextjs TypeScript Starter Blog
 
 > Blogging starter template based on [Tailwind](https://github.com/tailwindlabs/tailwindcss) + [Next.js](https://github.com/vercel/next.js) + **[TypeScript](https://github.com/microsoft/TypeScript)**.

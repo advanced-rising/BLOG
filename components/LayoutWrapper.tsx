@@ -3,13 +3,13 @@ import siteMetadata from '@/data/siteMetadata';
 
 import Logo from '@/data/logo.svg';
 
-import Footer from './Footer';
 import Link from './Link';
 import MobileNav from './MobileNav';
 import SectionContainer from './SectionContainer';
 import ThemeSwitch from './ThemeSwitch';
 
 import type { ReactNode } from 'react';
+import Footer from './Footer';
 
 interface Props {
   children: ReactNode;

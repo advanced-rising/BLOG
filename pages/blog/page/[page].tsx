@@ -7,6 +7,7 @@ import { POSTS_PER_PAGE } from '../../blog';
 
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
+import UiSectionContainer from '@/components/UiSectionContainer';
 
 export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
   const totalPosts = await getAllFilesFrontMatter('blog');
@@ -52,9 +53,9 @@ export default function PostPage({
   pagination,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <>
+    <UiSectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title='All Posts' />
-    </>
+    </UiSectionContainer>
   );
 }

@@ -7,9 +7,19 @@
       <language>ko-KR</language>
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
-      <lastBuildDate>Sat, 07 Aug 2021 15:32:14 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 28 Jul 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/docker</guid>
+    <title>Docker</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/docker</link>
+    <description>Example of a markdown file with code blocks and syntax highlighting</description>
+    <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>docker</category><category>devops</category><category>features</category>
+  </item>
+
   <item>
     <guid>https://blog-snowy-nine.vercel.app//blog/new-features-in-v1</guid>
     <title>New features in v1</title>

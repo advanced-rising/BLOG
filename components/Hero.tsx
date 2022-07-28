@@ -30,7 +30,7 @@ export default function Hero(): ReactElement {
       <div
         className='relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-112px)]'
         style={{
-          transform: `translateY(${progress * 20}vh)`,
+          transform: `translateY(${progress * 30}vh)`,
         }}>
         <AnimatePresence>
           <div className='mt-[-120px] flex w-screen flex-col justify-between'>

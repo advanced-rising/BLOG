@@ -9,6 +9,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
 import type { Toc } from 'types/Toc';
+import UiSectionContainer from '@/components/UiSectionContainer';
 
 const DEFAULT_LAYOUT = 'PostLayout';
 
@@ -65,7 +66,7 @@ export default function Blog({ post, authorDetails, prev, next }: InferGetStatic
   const { mdxSource, toc, frontMatter } = post;
 
   return (
-    <>
+    <UiSectionContainer>
       {'draft' in frontMatter && frontMatter.draft !== true ? (
         <MDXLayoutRenderer
           layout={frontMatter.layout || DEFAULT_LAYOUT}
@@ -86,6 +87,6 @@ export default function Blog({ post, authorDetails, prev, next }: InferGetStatic
           </PageTitle>
         </div>
       )}
-    </>
+    </UiSectionContainer>
   );
 }

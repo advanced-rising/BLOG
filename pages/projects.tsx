@@ -1,11 +1,12 @@
 import Card from '@/components/Card';
 import { PageSEO } from '@/components/SEO';
+import UiSectionContainer from '@/components/UiSectionContainer';
 import projectsData from '@/data/projectsData';
 import siteMetadata from '@/data/siteMetadata';
 
 export default function Projects() {
   return (
-    <>
+    <UiSectionContainer>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
         <div className='space-y-2 pt-6 pb-8 md:space-y-5'>
@@ -24,6 +25,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-    </>
+    </UiSectionContainer>
   );
 }

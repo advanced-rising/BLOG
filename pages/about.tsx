@@ -1,4 +1,5 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents';
+import UiSectionContainer from '@/components/UiSectionContainer';
 import { getFileBySlug } from '@/lib/mdx';
 
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
@@ -19,6 +20,12 @@ export default function About({ authorDetails }: InferGetStaticPropsType<typeof 
   const { mdxSource, frontMatter } = authorDetails;
 
   return (
-    <MDXLayoutRenderer layout={frontMatter.layout || DEFAULT_LAYOUT} mdxSource={mdxSource} frontMatter={frontMatter} />
+    <UiSectionContainer>
+      <MDXLayoutRenderer
+        layout={frontMatter.layout || DEFAULT_LAYOUT}
+        mdxSource={mdxSource}
+        frontMatter={frontMatter}
+      />
+    </UiSectionContainer>
   );
 }

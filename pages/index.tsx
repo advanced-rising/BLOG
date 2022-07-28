@@ -34,7 +34,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         </div>
         <Hero />
         <Works />
-        <ul className='divide-y divide-gray-200 dark:divide-gray-700'>
+        <ul className='divide-y divide-gray-200 dark:divide-gray-700 mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter;

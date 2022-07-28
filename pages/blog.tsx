@@ -1,4 +1,5 @@
 import { PageSEO } from '@/components/SEO';
+import UiSectionContainer from '@/components/UiSectionContainer';
 import siteMetadata from '@/data/siteMetadata';
 import ListLayout from '@/layouts/ListLayout';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
@@ -29,9 +30,9 @@ export default function Blog({
   pagination,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <>
+    <UiSectionContainer>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
       <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title='All Posts' />
-    </>
+    </UiSectionContainer>
   );
 }

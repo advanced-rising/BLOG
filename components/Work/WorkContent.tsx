@@ -18,8 +18,8 @@ export default function WorkContent({ work, progress }: WorkContentProps) {
         <span className='text-4xl font-semibold tracking-tight md:text-5xl'>{title}</span>
       </WorkLeft>
       <WorkRight progress={progress}>
-        <div className='drop-shadow-2xl bg-black'>
-          <Image src={image.src} alt={title} layout='responsive' objectFit='cover' width='100%' height='100%' />
+        <div className='drop-shadow-2xl bg-black h-full'>
+          <Image src={image.src} alt={title} layout='fill' objectFit='cover' />
         </div>
       </WorkRight>
     </WorkContainer>

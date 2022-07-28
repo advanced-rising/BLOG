@@ -1,7 +1,7 @@
 import headerNavLinks from '@/data/headerNavLinks';
 import siteMetadata from '@/data/siteMetadata';
 
-import Logo from '@/data/films.svg';
+import Logo from '@/data/risingcore.svg';
 
 import Link from './Link';
 import MobileNav from './MobileNav';
@@ -19,7 +19,7 @@ const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
       <div className='flex h-screen flex-col justify-between'>
-        <header className='flex items-center justify-between py-10'>
+        <header className='flex items-center justify-between py-10 mx-auto max-w-5xl px-4 sm:px-6 w-full xl:px-0'>
           <div>
             <Link href='/' aria-label={siteMetadata.headerTitle}>
               <div className='flex items-center justify-between'>
@@ -34,6 +34,7 @@ const LayoutWrapper = ({ children }: Props) => {
               </div>
             </Link>
           </div>
+
           <div className='flex items-center text-base leading-5'>
             <div className='hidden sm:block'>
               {headerNavLinks.map((link) => (

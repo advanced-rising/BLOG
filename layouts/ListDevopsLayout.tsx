@@ -82,7 +82,7 @@ export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [
                       </div>
                     </div>
                     <div className='prose max-w-none text-gray-500 dark:text-gray-400'>{summary}</div>
-                    <CodeHighlight readMd={comment} />
+                    {comment && <CodeHighlight markdown={comment} />}
                   </div>
                 </article>
               </li>

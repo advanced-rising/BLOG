@@ -19,7 +19,6 @@ export const MDXComponents: ComponentMap = {
   a: CustomLink,
   pre: Pre,
   wrapper: Wrapper,
-
   Image,
   TOCInline,
   BlogNewsletterForm,

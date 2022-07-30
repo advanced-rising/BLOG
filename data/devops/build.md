@@ -7,7 +7,7 @@ comment: 도커 빌드
 code: docker build .
 ---
 
-## Docker build & run
+## Docker build
 
 ```docker
 docker build .

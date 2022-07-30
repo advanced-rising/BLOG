@@ -7,13 +7,23 @@
       <language>ko-KR</language>
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
-      <lastBuildDate>Thu, 28 Jul 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 30 Jul 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/build-and-run</guid>
-    <title>Build And Run</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/build-and-run</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/run</guid>
+    <title>Run</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/run</link>
+    undefined
+    <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>docker</category><category>devops</category><category>features</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/build</guid>
+    <title>Build</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/build</link>
     undefined
     <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>

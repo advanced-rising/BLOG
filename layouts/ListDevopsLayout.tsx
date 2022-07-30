@@ -78,16 +78,17 @@ export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [
                           {frontMatterTitle}
                         </Link>
                       </h3>
+
+                      <div>
+                        <div className=' max-w-none text-gray-500 dark:text-gray-400'>{summary}</div>
+                        <div className=' max-w-none text-gray-500 dark:text-gray-400'>{comment}</div>
+                        <div className=' max-w-none text-gray-500 dark:text-gray-400'>{code}</div>
+                      </div>
                       <div className='flex flex-wrap'>
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}
                       </div>
-                    </div>
-                    <div>
-                      <div className=' max-w-none text-gray-500 dark:text-gray-400'>{summary}</div>
-                      <div className=' max-w-none text-gray-500 dark:text-gray-400'>{comment}</div>
-                      <div className=' max-w-none text-gray-500 dark:text-gray-400'>{code}</div>
                     </div>
                   </div>
                 </article>

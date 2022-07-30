@@ -98,7 +98,7 @@ export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [
         </ul>
       </div>
       {pagination && pagination.totalPages > 1 && !searchValue && (
-        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
+        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} menu={'devops'} />
       )}
     </>
   );

@@ -36,6 +36,7 @@ export const getStaticProps: GetStaticProps<{
   const pagination = {
     currentPage: pageNumber,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+    menu: 'devops',
   };
 
   return {

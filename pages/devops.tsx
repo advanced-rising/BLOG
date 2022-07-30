@@ -32,12 +32,12 @@ export default function Devops({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <UiSectionContainer>
-      <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO title={`Devops - ${siteMetadata.author}`} description={siteMetadata.description} />
       <ListDevopsLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title='Single Comment Devops'
+        title='Command Devops'
       />
     </UiSectionContainer>
   );

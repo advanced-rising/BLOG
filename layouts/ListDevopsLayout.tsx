@@ -8,12 +8,15 @@ import formatDate from '@/lib/utils/formatDate';
 import type { ComponentProps } from 'react';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
 import CodeHighlight from '@/components/CodeHighlight/CodeHighlight';
+import { MDXLayoutRenderer } from '@/components/MDXComponents';
 interface Props {
   posts: PostFrontMatter[];
   title: string;
   initialDisplayPosts?: PostFrontMatter[];
   pagination?: ComponentProps<typeof Pagination>;
 }
+
+const DEFAULT_LAYOUT = 'PostLayout';
 
 export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
   const [searchValue, setSearchValue] = useState('');
@@ -58,7 +61,7 @@ export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
-            const { slug, date, title: frontMatterTitle, summary, tags, comment } = frontMatter;
+            const { slug, date, title: frontMatterTitle, summary, tags, comment, code } = frontMatter;
             return (
               <li key={slug} className='py-4'>
                 <article className='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0'>
@@ -81,8 +84,11 @@ export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [
                         ))}
                       </div>
                     </div>
-                    <div className='prose max-w-none text-gray-500 dark:text-gray-400'>{summary}</div>
-                    {comment && <CodeHighlight markdown={comment} />}
+                    <div>
+                      <div className=' max-w-none text-gray-500 dark:text-gray-400'>{summary}</div>
+                      <div className=' max-w-none text-gray-500 dark:text-gray-400'>{comment}</div>
+                      <div className=' max-w-none text-gray-500 dark:text-gray-400'>{code}</div>
+                    </div>
                   </div>
                 </article>
               </li>

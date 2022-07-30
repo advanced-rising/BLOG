@@ -10,7 +10,7 @@ import type { PostFrontMatter } from 'types/PostFrontMatter';
 import UiSectionContainer from '@/components/UiSectionContainer';
 
 export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
-  const totalPosts = await getAllFilesFrontMatter('blog');
+  const totalPosts = await getAllFilesFrontMatter('devops');
   const totalPages = Math.ceil(totalPosts.length / POSTS_PER_PAGE);
   const paths = Array.from({ length: totalPages }, (_, i) => ({
     params: { page: (i + 1).toString() },
@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps<{
   const {
     params: { page },
   } = context;
-  const posts = await getAllFilesFrontMatter('blog');
+  const posts = await getAllFilesFrontMatter('devops');
   const pageNumber = parseInt(page as string);
   const initialDisplayPosts = posts.slice(POSTS_PER_PAGE * (pageNumber - 1), POSTS_PER_PAGE * pageNumber);
   const pagination = {
@@ -55,7 +55,7 @@ export default function PostPage({
   return (
     <UiSectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title='All Posts' />
+      <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title='Devops' />
     </UiSectionContainer>
   );
 }

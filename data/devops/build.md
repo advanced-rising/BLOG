@@ -1,21 +1,19 @@
 ---
-title: Docker
+title: Build
 date: '2022-07-28'
 tags: ['docker', 'devops', 'features']
 draft: false
-summary: Docker Create Files
-comment: docker build . // 도커 빌드 docker run -p 3000:3000 build sha256 string // 도커 컨테이너 실행
+comment: 도커 빌드
+code: docker build .
 ---
 
-## How to Docker Commands
+## Docker build & run
 
 ```docker
-Dockerfile // 도커  파일 생성 작업
-
-docker build . // 도커 빌드
-
-docker run -p 3000:3000 {build sha256 string} // 도커 컨테이너 실행
+docker build .
 ```
+
+// 도커 빌드
 
 ```docker
 // Dockerfile

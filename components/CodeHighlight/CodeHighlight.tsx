@@ -13,7 +13,7 @@ function CodeHighlight({ markdown }) {
             !inline &&
             match && (
               <code className={className} {...props}>
-                {children}
+                {markdown}
               </code>
             )
           );

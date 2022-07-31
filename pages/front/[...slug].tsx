@@ -14,7 +14,7 @@ import UiSectionContainer from '@/components/UiSectionContainer';
 const DEFAULT_LAYOUT = 'PostLayout';
 
 export async function getStaticPaths() {
-  const posts = getFiles('blog');
+  const posts = getFiles('front');
   return {
     paths: posts.map((p) => ({
       params: {
@@ -33,11 +33,11 @@ export const getStaticProps: GetStaticProps<{
   next?: { slug: string; title: string };
 }> = async ({ params }) => {
   const slug = (params.slug as string[]).join('/');
-  const allPosts = await getAllFilesFrontMatter('blog');
+  const allPosts = await getAllFilesFrontMatter('front');
   const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === slug);
   const prev: { slug: string; title: string } = allPosts[postIndex + 1] || null;
   const next: { slug: string; title: string } = allPosts[postIndex - 1] || null;
-  const post = await getFileBySlug('blog', slug);
+  const post = await getFileBySlug('front', slug);
   // @ts-ignore
   const authorList = post.frontMatter.authors || ['default'];
   const authorPromise = authorList.map(async (author) => {
@@ -62,7 +62,7 @@ export const getStaticProps: GetStaticProps<{
   };
 };
 
-export default function Blog({ post, authorDetails, prev, next }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Front({ post, authorDetails, prev, next }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { mdxSource, toc, frontMatter } = post;
 
   return (

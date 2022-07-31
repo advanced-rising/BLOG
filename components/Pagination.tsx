@@ -3,10 +3,11 @@ import Link from '@/components/Link';
 interface Props {
   totalPages: number;
   currentPage: number;
-  menu?: string;
+  menu: string;
 }
 
 export default function Pagination({ totalPages, currentPage, menu }: Props) {
+  console.log('menu', menu);
   const prevPage = currentPage - 1 > 0;
   const nextPage = currentPage + 1 <= totalPages;
 
@@ -19,7 +20,7 @@ export default function Pagination({ totalPages, currentPage, menu }: Props) {
           </button>
         )}
         {prevPage && (
-          <Link href={currentPage - 1 === 1 ? `/${menu}/` : `/${menu}/page/${currentPage - 1}`}>
+          <Link href={currentPage - 1 === 1 ? `/${menu}` : `/${menu}/page/${currentPage - 1}`}>
             <button>Previous</button>
           </Link>
         )}

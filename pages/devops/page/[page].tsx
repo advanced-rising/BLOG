@@ -3,7 +3,7 @@ import siteMetadata from '@/data/siteMetadata';
 import ListLayout from '@/layouts/ListLayout';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
-import { POSTS_PER_PAGE } from '../../blog';
+import { POSTS_PER_PAGE } from '../../devops';
 
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
@@ -25,7 +25,7 @@ export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
 export const getStaticProps: GetStaticProps<{
   posts: PostFrontMatter[];
   initialDisplayPosts: PostFrontMatter[];
-  pagination: { currentPage: number; totalPages: number };
+  pagination: { currentPage: number; totalPages: number; menu: string };
 }> = async (context) => {
   const {
     params: { page },
@@ -56,7 +56,13 @@ export default function PostPage({
   return (
     <UiSectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title='Devops' />
+      <ListLayout
+        posts={posts}
+        initialDisplayPosts={initialDisplayPosts}
+        pagination={pagination}
+        title='Devops'
+        menu='devops'
+      />
     </UiSectionContainer>
   );
 }

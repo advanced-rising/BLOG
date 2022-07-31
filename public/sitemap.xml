@@ -5,11 +5,27 @@
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//back</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app//blog</loc>
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//devops</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//front</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//other</loc>
   </url>
 
   <url>
@@ -33,6 +49,10 @@
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//blog/intro-my</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app//blog/introducing-tailwind-nextjs-starter-blog</loc>
   </url>
 
@@ -53,6 +73,10 @@
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//blog/docker</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app//blog/nested-route/introducing-multi-part-posts-with-nested-routing</loc>
   </url>
 
@@ -66,6 +90,14 @@
 
   <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/code</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/devops</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/docker</loc>
   </url>
 
   <url>
@@ -89,11 +121,11 @@
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/markdown</loc>
+    <loc>https://blog-snowy-nine.vercel.app//tags/images</loc>
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/images</loc>
+    <loc>https://blog-snowy-nine.vercel.app//tags/markdown</loc>
   </url>
 
   <url>
@@ -105,11 +137,11 @@
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/ols</loc>
+    <loc>https://blog-snowy-nine.vercel.app//tags/next-js</loc>
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/next-js</loc>
+    <loc>https://blog-snowy-nine.vercel.app//tags/ols</loc>
   </url>
 
   <url>

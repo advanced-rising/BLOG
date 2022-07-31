@@ -12,9 +12,10 @@ interface Props {
   title: string;
   initialDisplayPosts?: PostFrontMatter[];
   pagination?: ComponentProps<typeof Pagination>;
+  menu?: string;
 }
 
-export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
+export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination, menu }: Props) {
   const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ');
@@ -70,7 +71,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                   <div className='space-y-3 xl:col-span-3'>
                     <div>
                       <h3 className='text-2xl font-bold leading-8 tracking-tight'>
-                        <Link href={`/blog/${slug}`} className='text-gray-900 dark:text-gray-100'>
+                        <Link href={`/${menu}/${slug}`} className='text-gray-900 dark:text-gray-100'>
                           {frontMatterTitle}
                         </Link>
                       </h3>
@@ -89,7 +90,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         </ul>
       </div>
       {pagination && pagination.totalPages > 1 && !searchValue && (
-        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} menu={'blog'} />
+        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} menu={menu} />
       )}
     </>
   );

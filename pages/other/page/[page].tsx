@@ -3,14 +3,14 @@ import siteMetadata from '@/data/siteMetadata';
 import ListLayout from '@/layouts/ListLayout';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
-import { POSTS_PER_PAGE } from '../../blog';
+import { POSTS_PER_PAGE } from '../../other';
 
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
 import UiSectionContainer from '@/components/UiSectionContainer';
 
 export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
-  const totalPosts = await getAllFilesFrontMatter('blog');
+  const totalPosts = await getAllFilesFrontMatter('other');
   const totalPages = Math.ceil(totalPosts.length / POSTS_PER_PAGE);
   const paths = Array.from({ length: totalPages }, (_, i) => ({
     params: { page: (i + 1).toString() },
@@ -30,13 +30,13 @@ export const getStaticProps: GetStaticProps<{
   const {
     params: { page },
   } = context;
-  const posts = await getAllFilesFrontMatter('blog');
+  const posts = await getAllFilesFrontMatter('other');
   const pageNumber = parseInt(page as string);
   const initialDisplayPosts = posts.slice(POSTS_PER_PAGE * (pageNumber - 1), POSTS_PER_PAGE * pageNumber);
   const pagination = {
     currentPage: pageNumber,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
-    menu: 'blog',
+    menu: 'other',
   };
 
   return {
@@ -61,7 +61,7 @@ export default function PostPage({
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
         title='All Posts'
-        menu='blog'
+        menu='other'
       />
     </UiSectionContainer>
   );

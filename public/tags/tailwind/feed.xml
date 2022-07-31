@@ -21,6 +21,16 @@
   </item>
 
   <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/intro-my</guid>
+    <title>Intro My</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/intro-my</link>
+    <description>Looking for a performant, out of the box template, with all the best in web technology to support your blogging needs? Checkout the Tailwind Nextjs Starter Blog template.</description>
+    <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>next-js</category><category>tailwind</category><category>guide</category>
+  </item>
+
+  <item>
     <guid>https://blog-snowy-nine.vercel.app//blog/introducing-tailwind-nextjs-starter-blog</guid>
     <title>Introducing Tailwind Nextjs Starter Blog</title>
     <link>https://blog-snowy-nine.vercel.app//blog/introducing-tailwind-nextjs-starter-blog</link>

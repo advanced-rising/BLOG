@@ -7,18 +7,17 @@ import formatDate from '@/lib/utils/formatDate';
 
 import type { ComponentProps } from 'react';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
-import CodeHighlight from '@/components/CodeHighlight/CodeHighlight';
-import { MDXLayoutRenderer } from '@/components/MDXComponents';
 interface Props {
   posts: PostFrontMatter[];
   title: string;
   initialDisplayPosts?: PostFrontMatter[];
   pagination?: ComponentProps<typeof Pagination>;
+  menu: string;
 }
 
 const DEFAULT_LAYOUT = 'PostLayout';
 
-export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
+export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [], pagination, menu }: Props) {
   const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ');
@@ -97,8 +96,8 @@ export default function ListDevopsLayout({ posts, title, initialDisplayPosts = [
           })}
         </ul>
       </div>
-      {pagination && pagination.totalPages > 1 && !searchValue && (
-        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} menu={'devops'} />
+      {menu && pagination && pagination.totalPages > 1 && !searchValue && (
+        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} menu={menu} />
       )}
     </>
   );

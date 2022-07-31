@@ -11,6 +11,7 @@ import kebabCase from '@/lib/utils/kebabCase';
 
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
+import UiSectionContainer from '@/components/UiSectionContainer';
 
 const root = process.cwd();
 
@@ -52,9 +53,9 @@ export default function Tag({ posts, tag }: InferGetStaticPropsType<typeof getSt
   // Capitalize first letter and convert space to dash
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1);
   return (
-    <>
+    <UiSectionContainer>
       <TagSEO title={`${tag} - ${siteMetadata.title}`} description={`${tag} tags - ${siteMetadata.author}`} />
       <ListLayout posts={posts} title={title} />
-    </>
+    </UiSectionContainer>
   );
 }

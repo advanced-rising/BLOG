@@ -8,7 +8,7 @@
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
       <lastBuildDate>Thu, 28 Jul 2022 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://blog-snowy-nine.vercel.app//tags/features/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://blog-snowy-nine.vercel.app//tags/devops/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://blog-snowy-nine.vercel.app//blog/docker</guid>
@@ -18,16 +18,6 @@
     <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
     <category>docker</category><category>devops</category><category>features</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/code-sample</guid>
-    <title>Sample .md file</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/code-sample</link>
-    <description>Example of a markdown file with code blocks and syntax highlighting</description>
-    <pubDate>Tue, 08 Mar 2016 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>markdown</category><category>code</category><category>features</category>
   </item>
 
     </channel>

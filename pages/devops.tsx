@@ -20,6 +20,7 @@ export const getStaticProps: GetStaticProps<{
   const pagination = {
     currentPage: 1,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+    menu: 'devops',
   };
 
   return { props: { initialDisplayPosts, posts, pagination } };
@@ -38,6 +39,7 @@ export default function Devops({
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
         title='Command Devops'
+        menu='devops'
       />
     </UiSectionContainer>
   );

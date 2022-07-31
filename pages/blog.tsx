@@ -19,6 +19,7 @@ export const getStaticProps: GetStaticProps<{
   const pagination = {
     currentPage: 1,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+    menu: 'blog',
   };
 
   return { props: { initialDisplayPosts, posts, pagination } };
@@ -32,7 +33,13 @@ export default function Blog({
   return (
     <UiSectionContainer>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title='All Posts' />
+      <ListLayout
+        posts={posts}
+        initialDisplayPosts={initialDisplayPosts}
+        pagination={pagination}
+        title='All Posts'
+        menu='blog'
+      />
     </UiSectionContainer>
   );
 }

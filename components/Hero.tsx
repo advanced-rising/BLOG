@@ -6,6 +6,7 @@ import FadeDown from './Animations/FadeDown';
 import FadeRight from './Animations/FadeRight';
 import FadeUp from './Animations/FadeUp';
 import { renderCanvas } from './renderCanvas';
+
 import { ScrollContext } from './ScrollObserver';
 
 export default function Hero(): ReactElement {

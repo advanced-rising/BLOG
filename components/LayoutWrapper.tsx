@@ -19,7 +19,7 @@ const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
       <div className='flex h-screen flex-col justify-between'>
-        <header className='flex items-center justify-between py-10 mx-auto max-w-5xl px-4 sm:px-6 w-full xl:px-0'>
+        <header className='mx-auto flex w-full max-w-5xl items-center justify-between py-10 px-4 sm:px-6 xl:px-0'>
           <div>
             <Link href='/' aria-label={siteMetadata.headerTitle}>
               <div className='flex items-center justify-between'>

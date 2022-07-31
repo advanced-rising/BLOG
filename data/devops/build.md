@@ -15,51 +15,11 @@ docker build .
 
 // 도커 빌드
 
-```docker
-// Dockerfile
 
-FROM node:14
 
-WORKDIR /app
 
-COPY package.json .
 
-RUN npm install
 
-COPY . .
-
-EXPOSE 3000
-
-CMD [ "node", "app.mjs" ]
-```
-
-```docker
-docker extension
-
-# Dockerfile
-
-FROM node:14
-
-# npm install 이 저장될 폴더
-WORKDIR /app
-
-# 경로 첫번째는 현재 이 폴더, 두번째는 그 파일을 저장하는 이미지 경로
-COPY package.json /app
-
-RUN npm install
-
-# 포트 넘버
-EXPOSE 80
-
-# 이미지 기반으로 컨테이너가 실행되고 난 뒤에 실행되는 CMD
-CMD ["node", "server.js"]
-```
-
-```docker
-docker ps -a // 컨테이너 확인
-
-docker run -it node // 노드 터미널 접속 가능
-```
 
 ```docker
 # 중지된 도커를 다시 실행하는 방법.

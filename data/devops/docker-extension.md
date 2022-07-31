@@ -3,7 +3,7 @@ title: Dockerfile Extension
 date: '2022-07-30'
 tags: ['docker', 'devops', 'features']
 draft: false
-comment: 도커 기본 코드
+comment: 도커 확장 코드
 ---
 
 ## Dockerfile Extension

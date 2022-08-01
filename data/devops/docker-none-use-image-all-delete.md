@@ -7,6 +7,8 @@ comment: 사용되지 않는 이미지 개별 및 동시 삭제
 code: docker rmi [image_id]
 ---
 
+## Docker None Use Image Delete
+
 ```docker
 docker images
 

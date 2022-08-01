@@ -7,6 +7,8 @@ comment: 사용되지 않는 이미지 모두 삭제
 code: docker image prune
 ---
 
+## Docker None Use Image All Delete
+
 ```docker
 docker images
 

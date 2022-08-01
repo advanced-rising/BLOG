@@ -7,13 +7,14 @@ comment: 컨테이너를 때어놓은 방법 및 데몬모드 실행
 code: docker start -d [image_name]
 ---
 
+## Docker Detach Mode
+
 ```docker
 docker attach [image_name]
 
 docker logs -f [image_name]
 
 docker start -d [image_name]
-
 ```
 
 detach 터미널을 사용할 수 있게 해준다.

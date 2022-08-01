@@ -7,6 +7,8 @@ comment: 도커를 다시 실행하는 방법
 code: docker start [image_name]
 ---
 
+## Docker Reruning
+
 ```docker
 docker run 은 새롭게 만들어지는 것.
 

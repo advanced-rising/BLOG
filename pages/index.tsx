@@ -12,7 +12,7 @@ import formatDate from '@/lib/utils/formatDate';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
 
-const MAX_DISPLAY = 5;
+const MAX_DISPLAY = 10;
 
 export const getStaticProps: GetStaticProps<{
   posts: PostFrontMatter[];
@@ -29,7 +29,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       <div className='divide-y divide-gray-200 dark:divide-gray-700'>
         <Hero />
         <Works />
-        <ul className='divide-y divide-gray-200 border-none dark:divide-gray-700 mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
+        <ul className='mx-auto max-w-3xl divide-y divide-gray-200 border-none px-4 dark:divide-gray-700 sm:px-6 xl:max-w-5xl xl:px-0'>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter;

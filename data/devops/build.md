@@ -13,56 +13,7 @@ code: docker build .
 docker build .
 ```
 
-// 도커 빌드
-
-
-
-
-
-
-
-```docker
-# 중지된 도커를 다시 실행하는 방법.
-
-docker run 은 새롭게 만들어지는 것.
-
-docker ps -a 도커이미지 확인
-
-docker start [image_name]
-```
-
-```docker
-Attached & Detached 컨테이너 이해하기
-
-docker attach [image_name] 재 실행하도록 도커에 다시연결
-
-docker logs -f [image_name]
-
-docker start -a [image_name] start와 attach둘다 동시 실행
-
-docker start -d [image_name] // detached 터미널을 사용할 수 있게 해준다.
-
-```
-
-```docker
-도커 이미지 삭제
-
-docker images // 도커 이미지 확인
-
-docker rmi [image_id] // 이미지 삭제 추가로 뒤에 나열하면 동시 삭제가능
-
-docker image prune // 사용되지 않은 이미지 모두 삭제
-```
-
-```docker
-도커의 컨테이너 자동 제거하기
-
---rm // 컨테이너가 중지되면 자동으로 제거
-
--d // detached 모드
-
-docker run -p 3000:80 -d --rm [image_id] // 컨테이너 중지 제거
-```
+도커 빌드
 
 ```docker
 도커의 이미지 검사

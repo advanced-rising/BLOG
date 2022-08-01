@@ -8,5 +8,7 @@ code: docker run -it node
 ---
 
 ```docker
-docker run -it node // 노드 터미널 접속 가능
+docker run -it node
 ```
+
+노드 터미널 접속 가능

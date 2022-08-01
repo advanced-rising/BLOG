@@ -8,6 +8,7 @@ import { POSTS_PER_PAGE } from '../../devops';
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
 import UiSectionContainer from '@/components/UiSectionContainer';
+import ListDevopsLayout from '@/layouts/ListDevopsLayout';
 
 export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
   const totalPosts = await getAllFilesFrontMatter('devops');
@@ -56,7 +57,7 @@ export default function PostPage({
   return (
     <UiSectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <ListLayout
+      <ListDevopsLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}

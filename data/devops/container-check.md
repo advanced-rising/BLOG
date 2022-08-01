@@ -8,5 +8,7 @@ code: docker ps -a
 ---
 
 ```docker
-docker ps -a // 컨테이너 확인
+docker ps -a
 ```
+
+컨테이너 확인

@@ -11,56 +11,6 @@
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 2</guid>
-    <title>NestJS Install</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 2</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category><category>install</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 3</guid>
-    <title>NestJS Install</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 3</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category><category>install</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 4</guid>
-    <title>NestJS Install</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 4</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category><category>install</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 5</guid>
-    <title>NestJS Install</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 5</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category><category>install</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy</guid>
-    <title>NestJS Constructor</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category>
-  </item>
-
-  <item>
     <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install</guid>
     <title>NestJS Install</title>
     <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install</link>
@@ -68,6 +18,16 @@
     <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
     <category>nestjs</category><category>back</category><category>install</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-mapped-types-dto-type</guid>
+    <title>NestJS Mapped Types DTO type</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-mapped-types-dto-type</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>nestjs</category><category>back</category>
   </item>
 
   <item>
@@ -88,16 +48,6 @@
     <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
     <category>nestjs</category><category>back</category><category>Validation Pipe</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/back</guid>
-    <title>Back</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/back</link>
-    undefined
-    <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
   </item>
 
     </channel>

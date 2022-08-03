@@ -4,7 +4,7 @@ date: '2022-08-03'
 tags: ['nestjs', 'back']
 draft: false
 comment: NestJs Param decorators
-code: npm i -g @nestjs/core
+code: ['@Param(param?: string)']
 ---
 
 ## Param decorators

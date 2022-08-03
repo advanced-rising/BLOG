@@ -7,125 +7,95 @@
       <language>ko-KR</language>
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
-      <lastBuildDate>Mon, 01 Aug 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 03 Aug 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-detach-mode</guid>
-    <title>Docker Detach Mode</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-detach-mode</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 2</guid>
+    <title>NestJS Install</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 2</link>
     undefined
-    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
+    <category>nestjs</category><category>back</category><category>install</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-attach-mode</guid>
-    <title>Docker Attach Mode</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-attach-mode</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 3</guid>
+    <title>NestJS Install</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 3</link>
     undefined
-    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
+    <category>nestjs</category><category>back</category><category>install</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-auto-container-delete</guid>
-    <title>Docker Auto Container Delete</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-auto-container-delete</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 4</guid>
+    <title>NestJS Install</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 4</link>
     undefined
-    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
+    <category>nestjs</category><category>back</category><category>install</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-none-use-image-all-delete</guid>
-    <title>Docker None Use Image Delete</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-none-use-image-all-delete</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 5</guid>
+    <title>NestJS Install</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy 5</link>
     undefined
-    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
+    <category>nestjs</category><category>back</category><category>install</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-none-use-image-delete</guid>
-    <title>Docker None Use Image All Delete</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-none-use-image-delete</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy</guid>
+    <title>NestJS Constructor</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install copy</link>
     undefined
-    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
+    <category>nestjs</category><category>back</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-reruning</guid>
-    <title>Docker Reruning</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-reruning</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install</guid>
+    <title>NestJS Install</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install</link>
     undefined
-    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
+    <category>nestjs</category><category>back</category><category>install</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-access-node</guid>
-    <title>Docker Access Node</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-access-node</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-param decorators</guid>
+    <title>NestJS Param decorators</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-param decorators</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>nestjs</category><category>back</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-validation-pipe</guid>
+    <title>NestJS Validation Pipe</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-validation-pipe</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>nestjs</category><category>back</category><category>Validation Pipe</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/back</guid>
+    <title>Back</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/back</link>
     undefined
     <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-container-check</guid>
-    <title>Docker Container Check</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-container-check</link>
-    undefined
-    <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-extension</guid>
-    <title>Dockerfile Extension</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-extension</link>
-    undefined
-    <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-run</guid>
-    <title>Docker Run</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-run</link>
-    undefined
-    <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/dockerfile-normal</guid>
-    <title>Dockerfile Normal</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/dockerfile-normal</link>
-    undefined
-    <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>docker</category><category>devops</category><category>features</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/docker-build</guid>
-    <title>Docker Build</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/docker-build</link>
-    undefined
-    <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
     <category>docker</category><category>devops</category><category>features</category>
   </item>

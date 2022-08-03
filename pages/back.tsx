@@ -7,7 +7,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { ComponentProps } from 'react';
 
-export const POSTS_PER_PAGE = 5;
+export const POSTS_PER_PAGE = 10;
 
 export const getStaticProps: GetStaticProps<{
   posts: ComponentProps<typeof ListLayout>['posts'];

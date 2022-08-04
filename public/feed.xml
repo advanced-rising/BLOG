@@ -7,47 +7,47 @@
       <language>ko-KR</language>
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
-      <lastBuildDate>Wed, 03 Aug 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 04 Aug 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install</guid>
-    <title>NestJS Install</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-component</guid>
+    <title>React Component</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-component</link>
     undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category><category>install</category>
+    <category>react</category><category>front</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-mapped-types-dto-type</guid>
-    <title>NestJS Mapped Types DTO type</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-mapped-types-dto-type</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-conditional-render</guid>
+    <title>React Conditional Render</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-conditional-render</link>
     undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category>
+    <category>react</category><category>front</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-param decorators</guid>
-    <title>NestJS Param decorators</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-param decorators</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-mvc-pattern</guid>
+    <title>React MVC Pattern</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-mvc-pattern</link>
     undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category>
+    <category>react</category><category>front</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-validation-pipe</guid>
-    <title>NestJS Validation Pipe</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-validation-pipe</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/what-is-react</guid>
+    <title>React는 왜 사용하는가 ?</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/what-is-react</link>
     undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>nestjs</category><category>back</category><category>Validation Pipe</category>
+    <category>react</category><category>front</category>
   </item>
 
     </channel>

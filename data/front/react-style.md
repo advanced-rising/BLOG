@@ -4,7 +4,6 @@ date: '2022-08-04'
 tags: ['react', 'front']
 draft: false
 comment: React Style
-code: [style={ { color : 'blue' , fontSize : "16px" } }]
 ---
 
 ## 데이터 바인딩

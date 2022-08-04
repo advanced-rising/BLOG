@@ -9,7 +9,8 @@ code: handleChangInput ... handleViewActive
 
 리액트에서 관례라고 볼수도 있다 .
 
-보통 이벤트 헨들러를 작성하게 된다면, 그에 맞는 함수의 이름은 handle 이라는 이름과 함께 작명을 하게 됨
+보통 이벤트 헨들러를 작성하게 된다면,
+그에 맞는 함수의 이름은 handle 이라는 이름과 함께 작명을 하게 됨
 
 ```tsx
 handleChangInput ... handleViewActive

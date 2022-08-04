@@ -7,7 +7,6 @@ interface Props {
 }
 
 export default function Pagination({ totalPages, currentPage, menu }: Props) {
-  console.log('menu', menu);
   const prevPage = currentPage - 1 > 0;
   const nextPage = currentPage + 1 <= totalPages;
 

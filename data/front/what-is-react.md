@@ -21,7 +21,5 @@ Web-app 이라고도 불리운다.
 3. npm start // 그냥 미리보는 창
 
 App.js 는 메인페이지에 들어갈 html
-
 public/index.html 에 있는것이 우리가 들어갈 html.
-
 index.js에 들어갈 document.getElementById('root') 가 그 역할을 해줌

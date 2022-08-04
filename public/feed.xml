@@ -31,6 +31,36 @@
   </item>
 
   <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-createportal</guid>
+    <title>React createPortal</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-createportal</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-fragment</guid>
+    <title>React Fragment</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-fragment</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-handler-naming</guid>
+    <title>React Handler Naming</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-handler-naming</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category>
+  </item>
+
+  <item>
     <guid>https://blog-snowy-nine.vercel.app//blog/react-mvc-pattern</guid>
     <title>React MVC Pattern</title>
     <link>https://blog-snowy-nine.vercel.app//blog/react-mvc-pattern</link>
@@ -38,6 +68,56 @@
     <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
     <category>react</category><category>front</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-style</guid>
+    <title>React Style</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-style</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-useeffect</guid>
+    <title>React useEffect</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-useeffect</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category><category>hook</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-usereducer</guid>
+    <title>React useReducer</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-usereducer</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category><category>hook</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-useref</guid>
+    <title>React useRef</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-useref</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category><category>hook</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/react-usestate</guid>
+    <title>React useState</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/react-usestate</link>
+    undefined
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>react</category><category>front</category><category>hook</category>
   </item>
 
   <item>

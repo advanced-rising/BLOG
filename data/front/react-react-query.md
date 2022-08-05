@@ -114,6 +114,10 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 <ReactQueryDevtools initialIsOpen={true} />;
 ```
 
+<center>
+
 ![react-query](/static/images/front/react-query.png)
+
+</center>
 
 이렇게 query를 제어 하고 확인 할수 있는 공간이 생김

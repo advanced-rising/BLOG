@@ -152,8 +152,11 @@ function App() {
 export default App;
 ```
 
+<center>
+
 ![variants.gif](/static/images/front/variants.gif)
 
+</center>
 ## Click, Drag
 
 ```jsx
@@ -193,8 +196,11 @@ function App() {
 export default App;
 ```
 
+<center>
+
 ![variants drag.gif](/static/images/front/variants_drag.gif)
 
+</center>
 ## Drag를 상자안에 가두기
 
 ```jsx
@@ -255,8 +261,11 @@ function App() {
 export default App;
 ```
 
+<center>
+
 ![variants drag2.gif](/static/images/front/variants_drag2.gif)
 
+</center>
 ## Drag 시 좌표값으로 scale 변경 되게 하기
 
 ```jsx
@@ -293,7 +302,11 @@ function App() {
 export default App;
 ```
 
+<center>
+
 ![variants drag3.gif](/static/images/front/variants_drag3.gif)
+
+</center>
 
 ## background 을 바꾸면서 회전하는 법
 
@@ -341,8 +354,11 @@ function App() {
 export default App;
 ```
 
+<center>
+
 ![variants drag4.gif](/static/images/front/variants_drag4.gif)
 
+</center>
 ## Path 랜더링
 
 ```jsx
@@ -397,8 +413,11 @@ export default App;
 
 [Font Awesome](https://fontawesome.com/)
 
+<center>
+
 ![variants drag5.gif](/static/images/front/variants_drag5.gif)
 
+</center>
 ## 에니메이션으로 slider 를 만들어보기
 
 ```jsx
@@ -482,7 +501,11 @@ function App() {
 export default App;
 ```
 
+<center>
+
 ![variants slider1.gif](/static/images/front/variants_slider1.gif)
+
+</center>
 
 ```jsx
 <AnimatePresence exitBeforeEnter custom={back}>
@@ -490,4 +513,8 @@ export default App;
 
 애니메이션이 다 끝난뒤에 상자가 불러와지는 법
 
+<center>
+
 ![variants slider2.gif](/static/images/front/variants_slider2.gif)
+
+</center>

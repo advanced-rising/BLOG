@@ -18,8 +18,8 @@ const MyContext = React.createContext(defaultValue);
 </MyContext.Provider>
 ```
 
-기본적인 Context 생성과
-Context Provider 를 통한 데이터 공급 방법
+기본적인 `Context` 생성과
+`Context Provider` 를 통한 데이터 공급 방법
 
 ## 예시 1
 
@@ -27,7 +27,7 @@ Context Provider 를 통한 데이터 공급 방법
 export const DiaryStateContext = React.createContext();
 ```
 
-export 를 하여 DiaryStateContxt라는 Context를 하나 생성하여 이것을
+`export`를 하여 `DiaryStateContxt`라는 `Context`를 하나 생성하여 이것을
 
 ```jsx
 return (

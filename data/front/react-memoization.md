@@ -92,4 +92,4 @@ const handleChange = useCallback((e) => {
 }, []);
 ```
 
-useCallback을 통해 memoized된 함수는 eventhandler로 사용되며두번째 인자인 [] <- 배열인 요소가 변경될때마다 새로운 함수가 생성된다.
+useCallback을 통해 memoized된 함수는 eventhandler로 사용되며두번째 인자인 `[]` <- 배열인 요소가 변경될때마다 새로운 함수가 생성된다.

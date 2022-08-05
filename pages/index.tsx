@@ -12,7 +12,7 @@ import formatDate from '@/lib/utils/formatDate';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import type { PostFrontMatter } from 'types/PostFrontMatter';
 
-const MAX_DISPLAY = 10;
+const MAX_DISPLAY = 0;
 
 export const getStaticProps: GetStaticProps<{
   posts: PostFrontMatter[];

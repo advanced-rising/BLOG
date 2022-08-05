@@ -44,7 +44,7 @@ const useAxios = ({ url, method, body = null, headers = null }) => {
 export default useAxios;
 ```
 
-usage
+## usage
 
 ```jsx
 // App Component

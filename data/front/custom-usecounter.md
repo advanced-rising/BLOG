@@ -27,7 +27,7 @@ const useCounter = () => {
 export default useCounter;
 ```
 
-## Usage
+## usage
 
 ```jsx
 import useCounter from '../hook/use-counter';

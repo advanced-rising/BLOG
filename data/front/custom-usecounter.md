@@ -1,9 +1,9 @@
 ---
-title: React useCounter
+title: useCounter Custom Hook
 date: '2022-08-04'
 tags: ['react', 'front', 'custom-hook']
 draft: false
-comment: React useCounter
+comment: useCounter Custom Hook
 ---
 
 ## useCounter

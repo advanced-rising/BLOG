@@ -27,7 +27,7 @@ const MyContext = React.createContext(defaultValue);
 export const DiaryStateContext = React.createContext();
 ```
 
-`export`를 하여 `DiaryStateContxt`라는 `Context`를 하나 생성하여 이것을
+- `export`를 하여 `DiaryStateContxt`라는 `Context`를 하나 생성하여 이것을
 
 ```jsx
 return (

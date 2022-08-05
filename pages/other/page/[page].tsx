@@ -60,7 +60,7 @@ export default function PostPage({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title='All Posts'
+        title='Other'
         menu='other'
       />
     </UiSectionContainer>

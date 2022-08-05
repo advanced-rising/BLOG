@@ -14,7 +14,7 @@ import UiSectionContainer from '@/components/UiSectionContainer';
 const DEFAULT_LAYOUT = 'PostLayout';
 
 export async function getStaticPaths() {
-  const posts = getFiles('front');
+  const posts = getFiles('other');
   return {
     paths: posts.map((p) => ({
       params: {
@@ -33,11 +33,11 @@ export const getStaticProps: GetStaticProps<{
   next?: { slug: string; title: string };
 }> = async ({ params }) => {
   const slug = (params.slug as string[]).join('/');
-  const allPosts = await getAllFilesFrontMatter('front');
+  const allPosts = await getAllFilesFrontMatter('other');
   const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === slug);
   const prev: { slug: string; title: string } = allPosts[postIndex + 1] || null;
   const next: { slug: string; title: string } = allPosts[postIndex - 1] || null;
-  const post = await getFileBySlug('front', slug);
+  const post = await getFileBySlug('other', slug);
   // @ts-ignore
   const authorList = post.frontMatter.authors || ['default'];
   const authorPromise = authorList.map(async (author) => {

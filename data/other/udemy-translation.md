@@ -1,7 +1,7 @@
 ---
 title: Udemy Translation
 date: '2022-08-05'
-tags: ['jest', 'test', 'install']
+tags: ['udemy']
 draft: false
 comment: Udemy Translation
 ---

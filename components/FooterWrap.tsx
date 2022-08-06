@@ -13,7 +13,6 @@ export default function FooterWrap() {
           <SocialIcon kind='facebook' href={siteMetadata.facebook} size={1.5} />
           <SocialIcon kind='youtube' href={siteMetadata.youtube} size={1.5} />
           <SocialIcon kind='linkedin' href={siteMetadata.linkedin} size={1.5} />
-          <SocialIcon kind='twitter' href={siteMetadata.twitter} size={1.5} />
         </div>
         <div className='mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400'>
           <div>{siteMetadata.author}</div>
@@ -22,11 +21,7 @@ export default function FooterWrap() {
           <div>{` • `}</div>
           <Link href='/'>{siteMetadata.title}</Link>
         </div>
-        <div className='mb-8 text-sm text-gray-500 dark:text-gray-400'>
-          <Link href='https://github.com/yunsii/tailwind-nextjs-typescript-starter-blog'>
-            Tailwind Nextjs Typescript Theme
-          </Link>
-        </div>
+        <div className='mb-8 text-sm text-gray-500 dark:text-gray-400'>Tailwind Nextjs Typescript Theme</div>
       </div>
     </footer>
   );

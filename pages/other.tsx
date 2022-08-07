@@ -37,7 +37,7 @@ export default function Other({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title='All Posts'
+        title='Other'
         menu='other'
       />
     </UiSectionContainer>

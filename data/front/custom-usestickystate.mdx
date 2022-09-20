@@ -1,0 +1,25 @@
+---
+title: useStickyState Custom Hook
+date: '2022-08-04'
+tags: ['react', 'front', 'custom-hook']
+draft: false
+comment: useStickyState Custom Hook
+---
+
+## useStickyState
+
+```jsx
+import { useState, useEffect } from 'react';
+
+export function useStickyState(defaultValue: any, key: string) {
+  const [value, setValue] = useState(() => {
+    const stickyValue = window.sessionStorage.getItem(key);
+    return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+  });
+
+  useEffect(() => {
+    window.sessionStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [value, setValue];
+}
+```

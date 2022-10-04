@@ -6,6 +6,7 @@ const headerNavLinks = [
   { href: '/back', title: 'Back' },
   { href: '/devops', title: 'Devops' },
   { href: '/other', title: 'Other' },
+  { href: '/diary', title: 'Diary' },
   { href: '/about', title: 'About' },
 ];
 

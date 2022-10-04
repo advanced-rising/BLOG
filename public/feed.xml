@@ -7,17 +7,27 @@
       <language>ko-KR</language>
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
-      <lastBuildDate>Mon, 03 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 04 Oct 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/20221004</guid>
+    <title>날씨는 그래도 시원한 화요일</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/20221004</link>
+    undefined
+    <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>cloud</category><category>tuesday</category>
+  </item>
+
+  <item>
     <guid>https://blog-snowy-nine.vercel.app//blog/20221003</guid>
-    <title>오늘은 날씨가 좋지 않은 일요일</title>
+    <title>오늘은 날씨가 좋지 않은 월요일</title>
     <link>https://blog-snowy-nine.vercel.app//blog/20221003</link>
     undefined
     <pubDate>Mon, 03 Oct 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>rain</category><category>sunday</category>
+    <category>rain</category><category>monday</category>
   </item>
 
     </channel>

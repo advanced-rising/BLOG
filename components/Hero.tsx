@@ -27,7 +27,7 @@ export default function Hero(): ReactElement {
 
   return (
     <div className='h-screen'>
-      <div className='flex w-full flex-col items-center justify-start gap-40px px-10 xl:flex-row'>
+      <div className='flex w-full flex-col items-center justify-center gap-40px px-10 xl:flex-row'>
         <h1 className='sr-only'>Hello I'm risngcore / FrontEnd Developer from the Republic Korea.</h1>
         <div className='h-450px w-450px rounded-20px bg-[url("/static/images/risingcore.png")] bg-cover bg-center bg-no-repeat'></div>
         <div

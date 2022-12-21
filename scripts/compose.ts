@@ -1,9 +1,7 @@
 const fs = require('fs');
-const path = require('path')
-const dedent = require('dedent')
-const inquirer = require('inquirer')
-
-
+const path = require('path');
+const dedent = require('dedent');
+const inquirer = require('inquirer');
 
 const root = process.cwd();
 
@@ -122,3 +120,5 @@ inquirer
       console.log('Something went wrong, sorry!');
     }
   });
+
+export {};

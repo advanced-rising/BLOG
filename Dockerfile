@@ -23,4 +23,6 @@ EXPOSE 3000
 
 CMD [ "npm","run","dev" ]
 
+# docker build . -t {name}
+# docker run {name}
 # docker run -p sha256 -d

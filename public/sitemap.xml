@@ -41,47 +41,7 @@
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/deriving-ols-estimator</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/github-markdown-guide</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/guide-to-using-images-in-nextjs</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/intro-my</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/introducing-tailwind-nextjs-starter-blog</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/new-features-in-v1</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/pictures-of-canada</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/the-time-machine</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/code-sample</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/docker</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//blog/nested-route/introducing-multi-part-posts-with-nested-routing</loc>
+    <loc>https://blog-snowy-nine.vercel.app//blog/blog</loc>
   </url>
 
   <url>
@@ -93,10 +53,6 @@
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/docker</loc>
-  </url>
-
-  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/code</loc>
   </url>
 
@@ -105,15 +61,23 @@
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/diary</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/docker</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/feature</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/features</loc>
   </url>
 
   <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/github</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/feature</loc>
   </url>
 
   <url>
@@ -129,6 +93,10 @@
   </url>
 
   <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/markdown</loc>
+  </url>
+
+  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/math</loc>
   </url>
 
@@ -137,23 +105,19 @@
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/ols</loc>
-  </url>
-
-  <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/markdown</loc>
-  </url>
-
-  <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/next-js</loc>
   </url>
 
   <url>
-    <loc>https://blog-snowy-nine.vercel.app//tags/reflection</loc>
+    <loc>https://blog-snowy-nine.vercel.app//tags/ols</loc>
   </url>
 
   <url>
     <loc>https://blog-snowy-nine.vercel.app//tags/tailwind</loc>
+  </url>
+
+  <url>
+    <loc>https://blog-snowy-nine.vercel.app//tags/reflection</loc>
   </url>
 
   <url>

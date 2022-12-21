@@ -2,11 +2,6 @@
 
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
-const px0_500 = Array.from(Array(501))
-  .map((_, i) => `${i}px`)
-  .reduce((a, b) => {
-    return { [b]: b, ...a };
-  }, {});
 
 /** @type {import("tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
@@ -14,13 +9,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      borderWidth: px0_500,
-      fontSize: px0_500,
-      lineHeight: px0_500,
-      minWidth: px0_500,
-      minHeight: px0_500,
-      spacing: px0_500,
-      borderRadius: px0_500,
+      spacing: {
+        '9/16': '56.25%',
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',

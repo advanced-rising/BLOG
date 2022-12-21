@@ -1,6 +1,6 @@
 ---
 title: usePreventMove Custom Hook
-date: '2022-09-20'
+date: '2022-08-04'
 tags: ['react', 'front', 'context']
 draft: false
 comment: usePreventMove Custom Hook
@@ -52,5 +52,17 @@ export const ModalsProvider = ({ children }: { children: ReactNode }) => {
 ## usage
 
 ```jsx
-_app.jsx or tsx 에 Provider로 감싸기
+const alertUser = (e: any) => {
+  e.preventDefault();
+  e.returnValue = '';
+};
+
+const preventGoBack = () => {
+  history.pushState(null, '', location.href);
+  // openModal 이라는 컨텍스트 전역 모달이다.
+  openModal(WarringBackModal, { props: { change: setGoBack } });
+};
+
+/** 뒤로가기 새로고침 이벤트를 막는 커스텀훅 */
+const { setGoBack } = usePreventMove(alertUser, preventGoBack);
 ```

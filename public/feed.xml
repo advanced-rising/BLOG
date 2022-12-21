@@ -7,27 +7,137 @@
       <language>ko-KR</language>
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
-      <lastBuildDate>Tue, 04 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 06 Aug 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/20221004</guid>
-    <title>날씨는 그래도 시원한 화요일</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/20221004</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/what-is-blockchain</guid>
+    <title>What is Blockchain</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/what-is-blockchain</link>
     undefined
-    <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
+    <pubDate>Sat, 06 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>cloud</category><category>tuesday</category>
+    <category>blockchain</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/20221003</guid>
-    <title>오늘은 날씨가 좋지 않은 월요일</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/20221003</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/udemy-translation</guid>
+    <title>Udemy Translation</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/udemy-translation</link>
     undefined
-    <pubDate>Mon, 03 Oct 2022 00:00:00 GMT</pubDate>
+    <pubDate>Fri, 05 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>rain</category><category>monday</category>
+    <category>udemy</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-afterall</guid>
+    <title>Jest afterAll(fn, timeout)</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-afterall</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-aftereach</guid>
+    <title>Jest afterEach(fn, timeout)</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-aftereach</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-array-and-iterables</guid>
+    <title>Jest Arrays and iterables</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-array-and-iterables</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-beforeall</guid>
+    <title>Jest beforeAll(fn, timeout)</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-beforeall</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-beforeeach</guid>
+    <title>Jest beforeEach(fn, timeout)</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-beforeeach</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-exceotions</guid>
+    <title>Jest Exceptions</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-exceotions</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-expect</guid>
+    <title>Jest Expect()</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-expect</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-it</guid>
+    <title>Jest it()</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-it</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-string</guid>
+    <title>Jest String</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-string</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/jest-tobeinstanceof</guid>
+    <title>Jest toBeInstanceOf()</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/jest-tobeinstanceof</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category>
+  </item>
+
+  <item>
+    <guid>https://blog-snowy-nine.vercel.app//blog/what-is-jest</guid>
+    <title>What is Jest</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/what-is-jest</link>
+    undefined
+    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+    <author>vcjsm2283@gmail.com (risingcore)</author>
+    <category>jest</category><category>test</category><category>install</category>
   </item>
 
     </channel>

@@ -1,8 +1,9 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path')
+const dedent = require('dedent')
+const inquirer = require('inquirer')
 
-import dedent from 'dedent';
-import inquirer from 'inquirer';
+
 
 const root = process.cwd();
 

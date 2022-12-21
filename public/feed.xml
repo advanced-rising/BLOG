@@ -7,137 +7,47 @@
       <language>ko-KR</language>
       <managingEditor>vcjsm2283@gmail.com (risingcore)</managingEditor>
       <webMaster>vcjsm2283@gmail.com (risingcore)</webMaster>
-      <lastBuildDate>Sat, 06 Aug 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 03 Aug 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog-snowy-nine.vercel.app//feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/what-is-blockchain</guid>
-    <title>What is Blockchain</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/what-is-blockchain</link>
-    undefined
-    <pubDate>Sat, 06 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>blockchain</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/udemy-translation</guid>
-    <title>Udemy Translation</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/udemy-translation</link>
-    undefined
-    <pubDate>Fri, 05 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>udemy</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-afterall</guid>
-    <title>Jest afterAll(fn, timeout)</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-afterall</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-install</guid>
+    <title>NestJS Install</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-install</link>
     undefined
     <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
+    <category>nestjs</category><category>back</category><category>install</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-aftereach</guid>
-    <title>Jest afterEach(fn, timeout)</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-aftereach</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-mapped-types-dto-type</guid>
+    <title>NestJS Mapped Types DTO type</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-mapped-types-dto-type</link>
     undefined
     <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
+    <category>nestjs</category><category>back</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-array-and-iterables</guid>
-    <title>Jest Arrays and iterables</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-array-and-iterables</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-param decorators</guid>
+    <title>NestJS Param decorators</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-param decorators</link>
     undefined
     <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
+    <category>nestjs</category><category>back</category>
   </item>
 
   <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-beforeall</guid>
-    <title>Jest beforeAll(fn, timeout)</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-beforeall</link>
+    <guid>https://blog-snowy-nine.vercel.app//blog/nestjs-validation-pipe</guid>
+    <title>NestJS Validation Pipe</title>
+    <link>https://blog-snowy-nine.vercel.app//blog/nestjs-validation-pipe</link>
     undefined
     <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
     <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-beforeeach</guid>
-    <title>Jest beforeEach(fn, timeout)</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-beforeeach</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-exceotions</guid>
-    <title>Jest Exceptions</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-exceotions</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-expect</guid>
-    <title>Jest Expect()</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-expect</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-it</guid>
-    <title>Jest it()</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-it</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-string</guid>
-    <title>Jest String</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-string</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/jest-tobeinstanceof</guid>
-    <title>Jest toBeInstanceOf()</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/jest-tobeinstanceof</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category>
-  </item>
-
-  <item>
-    <guid>https://blog-snowy-nine.vercel.app//blog/what-is-jest</guid>
-    <title>What is Jest</title>
-    <link>https://blog-snowy-nine.vercel.app//blog/what-is-jest</link>
-    undefined
-    <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
-    <author>vcjsm2283@gmail.com (risingcore)</author>
-    <category>jest</category><category>test</category><category>install</category>
+    <category>nestjs</category><category>back</category><category>Validation Pipe</category>
   </item>
 
     </channel>

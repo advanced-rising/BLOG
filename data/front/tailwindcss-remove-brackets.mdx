@@ -1,0 +1,45 @@
+---
+title: tailwindCSS Remove Brackets
+date: '2022-09-21'
+tags: ['react', 'front', 'immer']
+draft: false
+comment: 테일윈드 괄호를 없애서 커스텀 픽셀
+---
+
+## tailwindCSS Remove Brackets
+
+```jsx
+// tailwind.config.js
+
+const px0_500 = Array.from(Array(501))
+  .map((_, i) => `${i}px`)
+  .reduce((a, b) => {
+    return { [b]: b, ...a };
+  }, {});
+
+
+module.exports = {
+  theme: {
+    extend: {
+      borderWidth: px0_500,
+      fontSize: px0_500,
+      lineHeight: px0_500,
+      minWidth: px0_500,
+      minHeight: px0_500,
+      spacing: px0_500,
+      ...
+    }
+  }
+}
+
+module.exports = reusableConfig({
+  theme: {
+    // ...
+    spacing: {
+      ...px0_500,
+      // ...
+    }
+  }
+})
+
+```

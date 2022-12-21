@@ -1,0 +1,59 @@
+---
+title: usePreventMove Custom Hook
+date: '2022-09-20'
+tags: ['react', 'front', 'custom-hook']
+draft: false
+comment: usePreventMove Custom Hook
+---
+
+## usePreventMove
+
+```jsx
+import { useEffect, useState } from 'react';
+
+/**
+ *
+ * @param onRefresh boolean 새로고침 막기 이벤트
+ * @param onGoBack boolean 뒤로가기 막기 이벤트
+ */
+export default function usePreventMove(onRefresh: (e: any) => void, onGoBack: (e: any) => void) {
+  const [goBack, setGoBack] = useState < boolean > false;
+
+  useEffect(() => {
+    /** 새로고침 이벤트 감지 */
+    window.addEventListener('beforeunload', onRefresh);
+
+    /** 뒤로가기 이벤트 감지 */
+    if (!goBack) {
+      history.pushState(null, '', location.href);
+      window.addEventListener('popstate', onGoBack);
+    }
+    return () => {
+      window.removeEventListener('beforeunload', onRefresh);
+      if (!goBack) {
+        window.removeEventListener('popstate', onGoBack);
+      }
+    };
+  }, [goBack, onGoBack, onRefresh]);
+
+  return { setGoBack };
+}
+```
+
+## usage
+
+```jsx
+const alertUser = (e: any) => {
+  e.preventDefault();
+  e.returnValue = '';
+};
+
+const preventGoBack = () => {
+  history.pushState(null, '', location.href);
+  // openModal 이라는 컨텍스트 전역 모달이다.
+  openModal(WarringBackModal, { props: { change: setGoBack } });
+};
+
+/** 뒤로가기 새로고침 이벤트를 막는 커스텀훅 */
+const { setGoBack } = usePreventMove(alertUser, preventGoBack);
+```

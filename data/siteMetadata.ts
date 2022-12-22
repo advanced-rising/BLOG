@@ -2,10 +2,10 @@ const siteMetadata = {
   title: 'risingcore Blog',
   author: 'risingcore',
   headerTitle: 'risingcore',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: '프론트를 할려하는 개발 블로그 입니다.\nA blog created with Next.js and Tailwind.css',
   language: 'ko-KR',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://blog-snowy-nine.vercel.app/',
+  siteUrl: 'https://risingcore.vercel.app/',
   siteRepo: 'https://github.com/advanced-rising/BLOG',
   siteLogo: '/static/images/risingcore.png',
   image: '/static/images/avatar.png',
@@ -21,10 +21,10 @@ const siteMetadata = {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
     // supports plausible, simpleAnalytics, umami or googleAnalytics
-    plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
-    simpleAnalytics: false, // true or false
+    plausibleDataDomain: 'risingcore.vercel.app', // e.g. tailwind-nextjs-starter-blog.vercel.app
+    simpleAnalytics: true, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: process.env.GOOGLE_ANALAYTICS_ID, // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-97JPYQEKWC', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo

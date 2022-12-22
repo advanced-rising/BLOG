@@ -19,8 +19,69 @@ import { AnimatePresence } from 'framer-motion';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 const isSocket = process.env.SOCKET;
+import Script from 'next/script';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
+function GoogleAnalytics() {
+  const {
+    analytics: { googleAnalyticsId },
+  } = siteMetadata;
+  return (
+    <>
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script strategy='afterInteractive' src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} />
+      <Script
+        id='gtag-init'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsId}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+    </>
+  );
+}
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  const {
+    analytics: { googleAnalyticsId },
+  } = siteMetadata;
+
+  const pageview = (url) => {
+    window.gtag('config', googleAnalyticsId, {
+      page_path: url,
+    });
+  };
+
+  const event = ({ action, category, label, value }) => {
+    window.gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  };
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on('hashChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off('hashChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <ThemeProvider attribute='class' defaultTheme={siteMetadata.theme}>
       <Head>
@@ -34,6 +95,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <ScrollProgressBar />
           <LogRocket />
           <LayoutWrapper>
+            <GoogleAnalytics />
             <Component {...pageProps} />
           </LayoutWrapper>
         </ScrollObserver>

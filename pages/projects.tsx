@@ -3,7 +3,7 @@ import { PageSEO } from '@/components/SEO';
 import UiSectionContainer from '@/components/UiSectionContainer';
 import projectsData from '@/data/projectsData';
 import siteMetadata from '@/data/siteMetadata';
-
+export const POSTS_PER_PAGE = 1;
 export default function Projects() {
   return (
     <UiSectionContainer>

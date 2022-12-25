@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Tile } from '../Tiles/Tile';
 import TileBackground from '../Tiles/TileBackground';
 import { TileContent } from '../Tiles/TileContent';
@@ -14,9 +15,13 @@ export default function Works() {
       </TileBackground>
       <TileContent>
         {workTiles.map((work, i) => (
-          <Tile page={i} key={work.title}>
-            <WorkContent work={work} />
-          </Tile>
+          <Link href={`/projects/${work.projects}`} passHref>
+            <a className='flex h-full w-full'>
+              <Tile page={i} key={work.title}>
+                <WorkContent work={work} />
+              </Tile>
+            </a>
+          </Link>
         ))}
       </TileContent>
     </TileWrapper>

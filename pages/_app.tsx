@@ -30,7 +30,11 @@ function GoogleAnalytics() {
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
-      <Script strategy='afterInteractive' src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} />
+      <Script
+        strategy='afterInteractive'
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+      />
       <Script
         id='gtag-init'
         strategy='afterInteractive'

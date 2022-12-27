@@ -22,6 +22,7 @@ const isSocket = process.env.SOCKET;
 import Script from 'next/script';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { renderCanvas } from '@/components/renderCanvas';
 
 function GoogleAnalytics() {
   const {
@@ -86,6 +87,10 @@ export default function App({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
+  useEffect(() => {
+    renderCanvas();
+  }, []);
+
   return (
     <ThemeProvider attribute='class' defaultTheme={siteMetadata.theme}>
       <Head>
@@ -100,6 +105,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <LogRocket />
           <LayoutWrapper>
             <GoogleAnalytics />
+            <canvas className='bg-skin-base pointer-events-none absolute inset-0 z-[9999]' id='canvas'></canvas>
             <Component {...pageProps} />
           </LayoutWrapper>
         </ScrollObserver>

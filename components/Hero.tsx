@@ -5,7 +5,6 @@ import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import FadeDown from './Animations/FadeDown';
 import FadeRight from './Animations/FadeRight';
 import FadeUp from './Animations/FadeUp';
-import { renderCanvas } from './renderCanvas';
 
 import { ScrollContext } from './ScrollObserver';
 
@@ -20,10 +19,6 @@ export default function Hero(): ReactElement {
   if (elContainer) {
     progress = Math.min(1, scrollY / elContainer.clientHeight);
   }
-
-  useEffect(() => {
-    renderCanvas();
-  }, []);
 
   return (
     <div className='h-screen'>
@@ -91,7 +86,6 @@ export default function Hero(): ReactElement {
           </FadeDown>
         </div>
       </div>
-      <canvas className='bg-skin-base pointer-events-none absolute inset-0' id='canvas'></canvas>
     </div>
   );
 }
